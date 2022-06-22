@@ -393,6 +393,12 @@ h1 {
     color: #A7A7A7;
 }
 
+
+/* .feedback_btn::before {
+    content: url(src/img/arrow.png);
+    position: absolute;
+} */
+
 .form input[type=submit] {
     padding: 3.2rem 13.4rem 3.3rem 8.7rem;
     font-weight: 600;
@@ -405,6 +411,12 @@ h1 {
     border-radius: 500px;
     margin-top: 2.4rem;
     cursor: pointer;
+    border: none;
+}
+
+.form input[type=submit]::after {
+    content: url(src/img/arrow.png);
+    display: block;
 }
 
 .form input[disabled] {
@@ -412,12 +424,13 @@ h1 {
     cursor: not-allowed;
 }
 
-.feedback_btn:after {
+
+/* .feedback_btn:after {
     top: 36%;
     right: 15%;
     transform: translateY(-50%);
     transform: rotate(45deg);
-}
+} */
 
 .agreement_form {
     margin-top: 1.9rem;
