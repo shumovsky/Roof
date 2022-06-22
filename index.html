@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <section class="bg">
+
+        <section class="navigation">
+            <div class="navigation__wrapper wrapper">
+                <ul class="navigation__list">
+                    <li class="navigation_item">
+                        <a href="/"><img src="./src/img/home.svg" alt=""></a>
+                    </li>
+                    <li class="navigation_item"><a href="#">каталог</a></li>
+                    <li class="navigation_item"><a href="#">Преимущества</a></li>
+                    <li class="navigation_item"><a href="#">Примеры работ</a></li>
+                    <li class="navigation_item"><a href="#">монтаж</a></li>
+                    <li class="navigation_item"><a href="#">отзывы</a></li>
+                    <li class="navigation_item"><a href="#">Ответы на вопросы</a></li>
+                    <li class="navigation_item"><a href="#">контакты</a></li>
+                </ul>
+            </div>
+        </section>
+        <header class="header">
+            <div class="header__wrapper wrapper">
+                <div class="description">
+                    <p class="description_title"><span class="text-bold">Кровельные и фасадные материалы</span> в Тюмени и области</p>
+                    <p class="description_text">Профессиональный монтаж с 2010 года.</p>
+                </div>
+                <div class="price">
+                    <span class="price_item">Pdf</span> <span class="price_tetx">Скачать прайс-каталог</span>
+                </div>
+                <img src="./src/img/logo.png" alt="">
+                <div class="answer">
+                    <p class="answer_text">Отвечаем <span class="text-bold">онлайн</span></p>
+                    <ul class="social__list">
+                        <li class="social__list-item">
+                            <a href="https://web.telegram.org/k/" target="_blank"><img src="src/img/telegram.svg" alt=""></a>
+                        </li>
+                        <li class="social__list-item">
+                            <a href="https://www.viber.com/ru/" target="_blank"><img src="src/img/viber.svg" alt=""></a>
+                        </li>
+                        <li class="social__list-item">
+                            <a href="https://www.whatsapp.com/?lang=ru" target="_blank"><img src="src/img/watsapp.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <p class="work_time"><span class="text-bold">Пн-Пт</span> 9:00 - 18:00, <span class="text-bold">Сб</span> 10:00 - 18:00</p>
+                    <a class="contact_phone" href="tel:8 (800) 222-54-60">8 (800) 222-54-60</a>
+                    <p class="contact_call">Позвоните мне</p>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="about__wrapper wrapper">
+                    <aside class="aside">
+                        <p class="aside_text"><span class="text-bold">Гарантия от 50 лет</span> на материалы и 5 лет на монтаж</p>
+                        <p class="aside_text"><span class="text-bold">Замер, монтажный проект</span> и еще 4 услуги бесплатно </p>
+                        <p class="aside_text"><span class="text-bold">Сметы точны</span> до копейки </p>
+                        <p class="aside_text"><span class="text-bold">Поэтапная оплата,</span> кредит или рассрочка</p>
+                        <p class="aside_text"><span class="text-bold">Наши крыши в каждом поселке</span> и дачном сообществе региона </p>
+                    </aside>
+                    <div class="about__content">
+                        <h1 class="about_promo">Продажа <span class="text-bold">кровельных материалов</span> в Тюмени и Тюменской области </h1>
+                        <p class="about_text">и монтаж под ключ</p>
+                        <div class="choice_btn"><button class="price_btn button">Рассчитать стоимость
+                            материалов и монтажа</button>
+                            <button class="record_btn button">записаться на
+                            просмотр объектов</button></div>
+                        <p class="about_description"><span class="text-bold"> Ответьте на несколько вопросов и получите</span> сметную стоимость и 3 подарка за экономию нашего времени</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <div class="modal modal_hidden">
+            <img class="close_modal" src="src/img/close.png" alt="">
+            <div class="request">
+                <p class="request_title">Быстро оставить заявку</p>
+                <p class="request_description">Введите номер, мы позвоним вам в течение 10 минут в рабочее время</p>
+                <p class="request__work_time">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+            </div>
+            <div class="feedback">
+                <p class="feedback_title">Введите номер телефона</p>
+                <input class="feedback_number" type="tel" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _">
+                <div class="form"><input type="submit" disabled="disabled" class="feedback_btn disable_btn button" value="Позвоните мне"></input>
+                    <form class="agreement_form">
+                        <input class="agreement_checkbox" type="checkbox" name="agreement" id="feedback_agreement" onchange="document.querySelector('.feedback_btn').disabled = !this.checked">
+                        <label class="agreement_form_text" for="feedback_agreement"><p>Нажимая кнопку вы соглашаетесь с условиями <span class="feedback_agreement-color">Политики конфиденциальности</span></p>  </label> </form>
+                </div>
+            </div>
+        </div>
+
+        <div type="button" class="callback-bt">
+            <div class="text-call">
+                <i class="fa fa-phone"></i>
+                <span>Заказать<br>звонок</span>
+            </div>
+        </div>
+
+
+
+    </section>
+
+</body>
+
+</html>
